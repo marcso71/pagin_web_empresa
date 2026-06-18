@@ -1,0 +1,129 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#mi-encabezado {
+    width: 100%;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#mi-encabezado h1 {
+    margin: 15px 0 5px 0;
+    font-size: 24px;
+}
+
+#mi-encabezado p {
+    margin: 0;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+
+nav ul, na ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li a, na ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 12px;
+    background-color: #34495e;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, na ul li a:hover {
+    background-color: #1abc9c;
+}
+
+table {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px 0;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    border: none; 
+}
+
+th {
+    background-color: #1abc9c;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+    line-height: 1.6;
+    vertical-align: middle;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+
+tr:hover {
+    background-color: #edf2f7;
+}
+
+
+td:first-child {
+    font-weight: bold;
+    color: #2c3e50;
+    width: 20%;
+}
+
+
+td img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+td img:hover {
+    transform: scale(1.1);
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    font-size: 13px;
+    margin-top: auto;
+}
