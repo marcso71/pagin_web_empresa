@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diccionario - Bases de Datos y Arquitectura de Software</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <img src="img/2DS.jpeg" alt="Logo" class="brand-logo">
+      </span>
+      Modulo 2.6
+    </a>
+    <div class="nav-links">
+      <a href="fundamentos.html">Fundamentos</a>
+      <a href="modelos.html">Modelos</a>
+      <a href="glosario.html" class="active">Diccionario</a>
+      <a href="ciclo.html">Ciclo de vida</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="glosario">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Diccionario alfabético</div>
+        <h2>Base de datos y arquitectura de software, letra por letra</h2>
+        <p>Explora los términos en orden alfabético. Cada letra abre su propia tabla con el término en inglés, su equivalente en español, una definición clara y una pequeña ilustración visual.</p>
+      </div>
+
+      <div class="dictionary-shell">
+        <div class="glossary-bar">
+          <div class="glossary-bar-left">
+            <span class="terminal-dots">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </span>
+            diccionario_az.sql
+          </div>
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3" stroke-linecap="round"></path></svg>
+            <input id="dictionarySearch" type="text" placeholder="Buscar término o definición…" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="alphabet-bar" id="alphabetBar">
+          <button class="alpha-btn active" data-letter="A">A</button>
+          <button class="alpha-btn" data-letter="B">B</button>
+          <button class="alpha-btn" data-letter="C">C</button>
+          <button class="alpha-btn" data-letter="D">D</button>
+          <button class="alpha-btn" data-letter="E">E</button>
+          <button class="alpha-btn" data-letter="F">F</button>
+          <button class="alpha-btn" data-letter="G">G</button>
+          <button class="alpha-btn" data-letter="H">H</button>
+          <button class="alpha-btn" data-letter="I">I</button>
+          <button class="alpha-btn" data-letter="J">J</button>
+          <button class="alpha-btn" data-letter="K">K</button>
+          <button class="alpha-btn" data-letter="L">L</button>
+          <button class="alpha-btn" data-letter="M">M</button>
+          <button class="alpha-btn" data-letter="N">N</button>
+          <button class="alpha-btn" data-letter="O">O</button>
+          <button class="alpha-btn" data-letter="P">P</button>
+          <button class="alpha-btn" data-letter="Q">Q</button>
+          <button class="alpha-btn" data-letter="R">R</button>
+          <button class="alpha-btn" data-letter="S">S</button>
+          <button class="alpha-btn" data-letter="T">T</button>
+          <button class="alpha-btn" data-letter="U">U</button>
+          <button class="alpha-btn" data-letter="V">V</button>
+          <button class="alpha-btn" data-letter="W">W</button>
+          <button class="alpha-btn" data-letter="X">X</button>
+          <button class="alpha-btn" data-letter="Y">Y</button>
+          <button class="alpha-btn" data-letter="Z">Z</button>
+          <button class="alpha-btn alpha-all" data-letter="todos">Todos</button>
+        </div>
+
+        <div class="dictionary-meta">
+          <span id="dictionaryCount">7 términos · Letra A</span>
+          <span>Temática: bases de datos y arquitectura de software</span>
+        </div>
+
+        <div class="dictionary-panels" id="dictionaryPanels">
+          <section class="dict-panel" data-letter="A">
+            <div class="dict-panel-head">
+              <div>
+                <div class="dict-letter">A</div>
+                <p class="dict-subtitle">Términos que comienzan con la letra A.</p>
+              </div>
+            </div>
+            
+            <div class="table-scroll">
+              <table class="dict-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Término (Inglés)</th>
+                    <th>Término (Español)</th>
+                    <th>Definición</th>
+                    <th>Esquema / Representación</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr class="dictionary-row">
+                    <td class="row-id">01</td>
+                    <td><div class="concept-name">API Gateway<span class="mono-tag arch">Arquitectura</span></div></td>
+                    <td><div class="term-es">Pasarela de API</div></td>
+                    <td class="desc-cell">Punto de entrada único que recibe solicitudes de clientes y las enruta de forma inteligente al microservicio correcto. Maneja autenticación y balanceo de carga.</td>
+                    <td>
+                      <div class="illus-card">
+                        <span class="illus-icon">🔀</span>
+                        <span class="illus-caption">Cliente ➔ Gateway ➔ Apps</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="dictionary-row">
+                    <td class="row-id">02</td>
+                    <td><div class="concept-name">ACID<span class="mono-tag db">Bases de Datos</span></div></td>
+                    <td><div class="term-es">ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad)</div></td>
+                    <td class="desc-cell">Conjunto de propiedades que garantizan que las transacciones de una base de datos se procesen de forma segura y confiable sin corromper los datos.</td>
+                    <td>
+                      <div class="illus-card">
+                        <span class="illus-icon">🔒</span>
+                        <span class="illus-caption">A · C · I · D = 100% Seguro</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="dictionary-row">
+                    <td class="row-id">03</td>
+                    <td><div class="concept-name">Aggregation<span class="mono-tag db">Bases de Datos</span></div></td>
+                    <td><div class="term-es">Agregación</div></td>
+                    <td class="desc-cell">Proceso en el cual se recopilan múltiples datos dispersos para presentarlos en forma de resumen estadístico (ej: operaciones SUM, AVG, COUNT en SQL).</td>
+                    <td>
+                      <div class="illus-card">
+                        <span class="illus-icon">📊</span>
+                        <span class="illus-caption">Datos ➔ [∑ Agregación] ➔ Totales</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="dictionary-row">
+                    <td class="row-id">04</td>
+                    <td><div class="concept-name">Asynchronous<span class="mono-tag arch">Arquitectura</span></div></td>
+                    <td><div class="term-es">Asíncrono</div></td>
+                    <td class="desc-cell">Modelo de comunicación donde el emisor envía un mensaje u operación y continúa con sus tareas sin esperar una respuesta inmediata del receptor.</td>
+                    <td>
+                      <div class="illus-card">
+                        <span class="illus-icon">⏳</span>
+                        <span class="illus-caption">Envío (...) ➔ Procesado posterior</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="dictionary-row">
+                    <td class="row-id">05</td>
+                    <td><div class="concept-name">Availability<span class="mono-tag arch">Arquitectura</span></div></td>
+                    <td><div class="term-es">Disponibilidad</div></td>
+                    <td class="desc-cell">Métrica de arquitectura que mide la proporción de tiempo que un sistema permanece operativo, accesible y listo para atender peticiones de los usuarios.</td>
+                    <td>
+                      <div class="illus-card">
+                        <span class="illus-icon">📈</span>
+                        <span class="illus-caption">Uptime 99.99% Online</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="dictionary-row">
+                    <td class="row-id">06</td>
+                    <td><div class="concept-name">Attribute<span class="mono-tag db">Bases de Datos</span></div></td>
+                    <td><div class="term-es">Atributo</div></td>
+                    <td class="desc-cell">Cada una de las propiedades, características o campos numéricos/alfanuméricos que definen o componen a una Entidad en un modelo relacional.</td>
+                    <td>
+                      <div class="illus-card">
+                        <span class="illus-icon">📋</span>
+                        <span class="illus-caption">Tabla ➔ [Columna / Atributo]</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="dictionary-row">
+                    <td class="row-id">07</td>
+                    <td><div class="concept-name">Authentication<span class="mono-tag arch">Arquitectura</span></div></td>
+                    <td><div class="term-es">Autenticación</div></td>
+                    <td class="desc-cell">Mecanismo de seguridad que se encarga de validar rigurosamente la identidad de un usuario o servicio antes de permitirle el acceso al ecosistema.</td>
+                    <td>
+                      <div class="illus-card">
+                        <span class="illus-icon">🔑</span>
+                        <span class="illus-caption">User + Pass ➔ Token Válido</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
